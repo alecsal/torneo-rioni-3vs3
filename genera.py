@@ -479,8 +479,7 @@ def genera_html(dati: dict, output_path: Path) -> None:
 <body>
 {body}
   <footer>
-    {esc(t.get('nome_esteso',''))} · {esc(t['date'])}<br>
-    Pagina generata automaticamente da <code>dati_torneo.json</code>
+    {esc(t.get('nome_esteso',''))} · {esc(t['date'])}
   </footer>
 </body>
 </html>"""
