@@ -248,7 +248,8 @@ def render_calendario(dati: dict) -> str:
 
 
 def render_finali(dati: dict) -> str:
-    fasi_finali = ["Semifinale 1", "Semifinale 2", "Finale 3°/4°", "Finalissima 1°/2°"]
+    fasi_finali = ["Quarto 1", "Quarto 2", "Quarto 3", "Quarto 4",
+                   "Semifinale 1", "Semifinale 2", "Finale 3°/4°", "Finalissima 1°/2°"]
     partite = {p.get("fase"): p for p in dati.get("partite", [])
                if p.get("fase") in fasi_finali}
     if not partite:
@@ -257,7 +258,7 @@ def render_finali(dati: dict) -> str:
     <h2 class="section-title">Tabellone Finale</h2>
     <div class="placeholder">
       <p>🏆 Tabellone delle finali.</p>
-      <p class="muted">Semifinali (13 giu): 1°A–2°B e 1°B–2°A · Finali (14 giu): 3°/4° e finalissima 1°/2°.</p>
+      <p class="muted">Quarti (13 giu): incroci tra i gironi · Semifinali e finali (14 giu): finale 3°/4° e finalissima 1°/2°.</p>
     </div>
   </section>"""
 
@@ -276,10 +277,23 @@ def render_finali(dati: dict) -> str:
   <section id="finali" class="section">
     <h2 class="section-title">Tabellone Finale</h2>
     <div class="bracket">
-      {slot('Semifinale 1', 'Semifinale · 1°A – 2°B')}
-      {slot('Semifinale 2', 'Semifinale · 1°B – 2°A')}
-      {slot('Finale 3°/4°', '🥉 Finale 3°/4°')}
-      {slot('Finalissima 1°/2°', '🏆 Finalissima 1°/2°')}
+      <div class="bracket-round">
+        <h3 class="bracket-round-title">Quarti di finale</h3>
+        {slot('Quarto 1', 'Quarto · 1°A – 4°B')}
+        {slot('Quarto 2', 'Quarto · 2°B – 3°A')}
+        {slot('Quarto 3', 'Quarto · 1°B – 4°A')}
+        {slot('Quarto 4', 'Quarto · 2°A – 3°B')}
+      </div>
+      <div class="bracket-round">
+        <h3 class="bracket-round-title">Semifinali</h3>
+        {slot('Semifinale 1', 'Semifinale · V.Q1 – V.Q2')}
+        {slot('Semifinale 2', 'Semifinale · V.Q3 – V.Q4')}
+      </div>
+      <div class="bracket-round">
+        <h3 class="bracket-round-title">Finali</h3>
+        {slot('Finale 3°/4°', '🥉 Finale 3°/4°')}
+        {slot('Finalissima 1°/2°', '🏆 Finalissima 1°/2°')}
+      </div>
     </div>
   </section>"""
 
@@ -405,7 +419,9 @@ table.calendario{width:100%;border-collapse:collapse}
 .calendario .fase{text-align:right;color:var(--muted);font-size:.8rem;white-space:nowrap}
 
 /* BRACKET */
-.bracket{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.bracket{display:flex;flex-direction:column;gap:22px}
+.bracket-round{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.bracket-round-title{grid-column:1/-1;font-size:1.05rem;font-weight:800;color:var(--orange);margin-bottom:2px}
 .bracket-match{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);
   border-radius:10px;padding:14px}
 .bm-label{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:6px;font-weight:700}
