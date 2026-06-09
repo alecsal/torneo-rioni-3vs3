@@ -32,7 +32,7 @@
     "punteggio": "Canestri da 1 e 2 punti (regole FIBA 3x3)",
     "classifica": "Vittoria = 2 punti, Sconfitta = 0 punti. Ordinamento: Punti → differenza canestri → canestri fatti.",
     "fase_girone": "2 gironi da 4 squadre, girone all'italiana (3 partite a testa = 12 partite totali).",
-    "fase_finale": "Semifinali incrociate (1°A–2°B / 1°B–2°A), poi finale 3°/4° e finalissima 1°/2°."
+    "fase_finale": "Si qualificano tutte le 8 squadre: quarti di finale incrociati tra i gironi (4 partite), poi 2 semifinali, finale 3°/4° e finalissima 1°/2°."
   },
   "rioni": [
     {
@@ -162,10 +162,10 @@
     {
       "n": 1,
       "giorno": "G1",
-      "ora": "20:00",
-      "squadra1": "Centro A",
-      "squadra2": "Bizzarrino A",
-      "fase": "Girone A",
+      "ora": "21:00",
+      "squadra1": "Bizzarrino B",
+      "squadra2": "Centro B",
+      "fase": "Girone B",
       "punti1": 0,
       "punti2": 0,
       "giocata": false
@@ -173,7 +173,7 @@
     {
       "n": 2,
       "giorno": "G1",
-      "ora": "20:30",
+      "ora": "21:20",
       "squadra1": "Grotta Parlanti A",
       "squadra2": "Vergine dei Pini A",
       "fase": "Girone A",
@@ -184,10 +184,10 @@
     {
       "n": 3,
       "giorno": "G1",
-      "ora": "21:00",
-      "squadra1": "Bizzarrino B",
-      "squadra2": "Centro B",
-      "fase": "Girone B",
+      "ora": "21:40",
+      "squadra1": "Centro A",
+      "squadra2": "Bizzarrino A",
+      "fase": "Girone A",
       "punti1": 0,
       "punti2": 0,
       "giocata": false
@@ -195,7 +195,7 @@
     {
       "n": 4,
       "giorno": "G1",
-      "ora": "21:30",
+      "ora": "22:00",
       "squadra1": "Cintolese A",
       "squadra2": "Grotta Parlanti B",
       "fase": "Girone B",
@@ -206,18 +206,7 @@
     {
       "n": 5,
       "giorno": "G2",
-      "ora": "20:00",
-      "squadra1": "Centro A",
-      "squadra2": "Vergine dei Pini A",
-      "fase": "Girone A",
-      "punti1": 0,
-      "punti2": 0,
-      "giocata": false
-    },
-    {
-      "n": 6,
-      "giorno": "G2",
-      "ora": "20:30",
+      "ora": "21:00",
       "squadra1": "Grotta Parlanti A",
       "squadra2": "Bizzarrino A",
       "fase": "Girone A",
@@ -226,9 +215,20 @@
       "giocata": false
     },
     {
+      "n": 6,
+      "giorno": "G2",
+      "ora": "21:20",
+      "squadra1": "Centro A",
+      "squadra2": "Vergine dei Pini A",
+      "fase": "Girone A",
+      "punti1": 0,
+      "punti2": 0,
+      "giocata": false
+    },
+    {
       "n": 7,
       "giorno": "G2",
-      "ora": "21:00",
+      "ora": "21:40",
       "squadra1": "Bizzarrino B",
       "squadra2": "Grotta Parlanti B",
       "fase": "Girone B",
@@ -239,7 +239,7 @@
     {
       "n": 8,
       "giorno": "G2",
-      "ora": "21:30",
+      "ora": "22:00",
       "squadra1": "Cintolese A",
       "squadra2": "Centro B",
       "fase": "Girone B",
@@ -250,7 +250,7 @@
     {
       "n": 9,
       "giorno": "G3",
-      "ora": "20:00",
+      "ora": "21:00",
       "squadra1": "Centro A",
       "squadra2": "Grotta Parlanti A",
       "fase": "Girone A",
@@ -261,7 +261,7 @@
     {
       "n": 10,
       "giorno": "G3",
-      "ora": "20:30",
+      "ora": "21:20",
       "squadra1": "Vergine dei Pini A",
       "squadra2": "Bizzarrino A",
       "fase": "Girone A",
@@ -272,7 +272,7 @@
     {
       "n": 11,
       "giorno": "G3",
-      "ora": "21:00",
+      "ora": "21:40",
       "squadra1": "Bizzarrino B",
       "squadra2": "Cintolese A",
       "fase": "Girone B",
@@ -283,7 +283,7 @@
     {
       "n": 12,
       "giorno": "G3",
-      "ora": "21:30",
+      "ora": "22:00",
       "squadra1": "Grotta Parlanti B",
       "squadra2": "Centro B",
       "fase": "Girone B",
@@ -294,10 +294,10 @@
     {
       "n": 13,
       "giorno": "G4",
-      "ora": "20:00",
+      "ora": "21:00",
       "squadra1": "1ª Girone A",
-      "squadra2": "2ª Girone B",
-      "fase": "Semifinale 1",
+      "squadra2": "4ª Girone B",
+      "fase": "Quarto 1",
       "punti1": 0,
       "punti2": 0,
       "giocata": false
@@ -305,18 +305,62 @@
     {
       "n": 14,
       "giorno": "G4",
-      "ora": "20:30",
-      "squadra1": "1ª Girone B",
-      "squadra2": "2ª Girone A",
-      "fase": "Semifinale 2",
+      "ora": "21:20",
+      "squadra1": "2ª Girone B",
+      "squadra2": "3ª Girone A",
+      "fase": "Quarto 2",
       "punti1": 0,
       "punti2": 0,
       "giocata": false
     },
     {
       "n": 15,
+      "giorno": "G4",
+      "ora": "21:40",
+      "squadra1": "1ª Girone B",
+      "squadra2": "4ª Girone A",
+      "fase": "Quarto 3",
+      "punti1": 0,
+      "punti2": 0,
+      "giocata": false
+    },
+    {
+      "n": 16,
+      "giorno": "G4",
+      "ora": "22:00",
+      "squadra1": "2ª Girone A",
+      "squadra2": "3ª Girone B",
+      "fase": "Quarto 4",
+      "punti1": 0,
+      "punti2": 0,
+      "giocata": false
+    },
+    {
+      "n": 17,
       "giorno": "G5",
-      "ora": "20:00",
+      "ora": "21:00",
+      "squadra1": "Vincente Quarto 1",
+      "squadra2": "Vincente Quarto 2",
+      "fase": "Semifinale 1",
+      "punti1": 0,
+      "punti2": 0,
+      "giocata": false
+    },
+    {
+      "n": 18,
+      "giorno": "G5",
+      "ora": "21:20",
+      "squadra1": "Vincente Quarto 3",
+      "squadra2": "Vincente Quarto 4",
+      "fase": "Semifinale 2",
+      "punti1": 0,
+      "punti2": 0,
+      "giocata": false
+    },
+    {
+      "n": 19,
+      "giorno": "G5",
+      "ora": "21:40",
       "squadra1": "Perdente Semifinale 1",
       "squadra2": "Perdente Semifinale 2",
       "fase": "Finale 3°/4°",
@@ -325,9 +369,9 @@
       "giocata": false
     },
     {
-      "n": 16,
+      "n": 20,
       "giorno": "G5",
-      "ora": "20:30",
+      "ora": "22:00",
       "squadra1": "Vincente Semifinale 1",
       "squadra2": "Vincente Semifinale 2",
       "fase": "Finalissima 1°/2°",

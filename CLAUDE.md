@@ -18,6 +18,12 @@ dati_torneo.json  →  genera.py  →  index.html
 
 **Regola d'oro:** mai modificare `index.html` a mano. Si rigenera sempre da `genera.py`.
 
+> ⚠️ **Per Claude / agenti automatici:** NON generare e NON committare tu `index.html`.
+> Modifica solo `dati_torneo.json` (e, se serve il layout, `genera.py`) e pusha: è
+> l'automazione di GitHub (CI) che rigenera e committa l'HTML dal cambiamento del JSON.
+> Puoi eseguire `python3 genera.py` **solo come anteprima locale**, ma non includere
+> mai `index.html` nei commit.
+
 ## Branch e pubblicazione
 
 - Branch di pubblicazione: **`master`** (default del repo, non `main`)
@@ -71,7 +77,7 @@ si tocca il template dentro `genera.py` (non l'HTML).
 - **Inserire risultati:** edit `dati_torneo.json` → commit → push su `master` → la CI fa il resto.
 - **Modificare grafica/layout:** edit `genera.py` → la CI rigenera l'HTML.
 - **Modificare struttura torneo (squadre, gironi, calendario):** edit `dati_torneo.json`.
-- **Locale (opzionale):** `python3 genera.py` per anteprima, ma il commit dell'`index.html` non è necessario (lo fa la CI).
+- **Locale (opzionale):** `python3 genera.py` solo per anteprima. **Non committare mai `index.html`**: lo rigenera e committa la CI dal cambiamento del JSON.
 
 ## Cose già fatte (storia)
 
