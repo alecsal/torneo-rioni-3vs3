@@ -199,9 +199,9 @@
       "squadra1": "Cintolese A",
       "squadra2": "Grotta Parlanti B",
       "fase": "Girone B",
-      "punti1": 0,
-      "punti2": 0,
-      "giocata": false
+      "punti1": 14,
+      "punti2": 16,
+      "giocata": true
     },
     {
       "n": 5,
