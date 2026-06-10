@@ -177,9 +177,9 @@
       "squadra1": "Grotta Parlanti A",
       "squadra2": "Vergine dei Pini A",
       "fase": "Girone A",
-      "punti1": 0,
-      "punti2": 0,
-      "giocata": false
+      "punti1": 10,
+      "punti2": 15,
+      "giocata": true
     },
     {
       "n": 3,
