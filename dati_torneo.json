@@ -166,9 +166,9 @@
       "squadra1": "Bizzarrino B",
       "squadra2": "Centro B",
       "fase": "Girone B",
-      "punti1": 0,
-      "punti2": 0,
-      "giocata": false
+      "punti1": 11,
+      "punti2": 10,
+      "giocata": true
     },
     {
       "n": 2,
