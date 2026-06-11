@@ -243,9 +243,9 @@
       "squadra1": "Centro A",
       "squadra2": "Vergine dei Pini A",
       "fase": "Girone A",
-      "punti1": 0,
-      "punti2": 0,
-      "giocata": false
+      "punti1": 14,
+      "punti2": 18,
+      "giocata": true
     },
     {
       "n": 9,
