@@ -254,9 +254,9 @@
       "squadra1": "Centro A",
       "squadra2": "Grotta Parlanti A",
       "fase": "Girone A",
-      "punti1": 0,
-      "punti2": 0,
-      "giocata": false
+      "punti1": 8,
+      "punti2": 20,
+      "giocata": true
     },
     {
       "n": 10,
