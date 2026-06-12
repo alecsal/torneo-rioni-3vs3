@@ -298,9 +298,9 @@
       "squadra1": "Grotta Parlanti A",
       "squadra2": "Centro B",
       "fase": "Quarto 1",
-      "punti1": 0,
-      "punti2": 0,
-      "giocata": false
+      "punti1": 19,
+      "punti2": 21,
+      "giocata": true
     },
     {
       "n": 14,
@@ -339,7 +339,7 @@
       "n": 17,
       "giorno": "G5",
       "ora": "21:00",
-      "squadra1": "Vincente Quarto 1",
+      "squadra1": "Centro B",
       "squadra2": "Vincente Quarto 2",
       "fase": "Semifinale 1",
       "punti1": 0,
