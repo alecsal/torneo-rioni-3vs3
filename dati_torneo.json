@@ -265,9 +265,9 @@
       "squadra1": "Vergine dei Pini A",
       "squadra2": "Bizzarrino A",
       "fase": "Girone A",
-      "punti1": 0,
-      "punti2": 0,
-      "giocata": false
+      "punti1": 14,
+      "punti2": 17,
+      "giocata": true
     },
     {
       "n": 11,
