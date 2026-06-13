@@ -309,9 +309,9 @@
       "squadra1": "Bizzarrino B",
       "squadra2": "Bizzarrino A",
       "fase": "Quarto 2",
-      "punti1": 0,
-      "punti2": 0,
-      "giocata": false
+      "punti1": 22,
+      "punti2": 11,
+      "giocata": true
     },
     {
       "n": 15,
