@@ -331,9 +331,9 @@
       "squadra1": "Vergine dei Pini A",
       "squadra2": "Cintolese A",
       "fase": "Quarto 4",
-      "punti1": 0,
-      "punti2": 0,
-      "giocata": false
+      "punti1": 20,
+      "punti2": 21,
+      "giocata": true
     },
     {
       "n": 17,
@@ -351,7 +351,7 @@
       "giorno": "G5",
       "ora": "21:20",
       "squadra1": "Grotta Parlanti B",
-      "squadra2": "Vincente Quarto 4",
+      "squadra2": "Cintolese A",
       "fase": "Semifinale 2",
       "punti1": 0,
       "punti2": 0,
