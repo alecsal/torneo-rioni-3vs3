@@ -364,9 +364,9 @@
       "squadra1": "Centro B",
       "squadra2": "Grotta Parlanti B",
       "fase": "Finale 3°/4°",
-      "punti1": 0,
-      "punti2": 0,
-      "giocata": false
+      "punti1": 17,
+      "punti2": 21,
+      "giocata": true
     },
     {
       "n": 20,
