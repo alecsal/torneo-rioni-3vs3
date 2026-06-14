@@ -375,9 +375,9 @@
       "squadra1": "Bizzarrino A",
       "squadra2": "Cintolese A",
       "fase": "Finalissima 1°/2°",
-      "punti1": 0,
-      "punti2": 0,
-      "giocata": false
+      "punti1": 21,
+      "punti2": 19,
+      "giocata": true
     }
   ]
 }
