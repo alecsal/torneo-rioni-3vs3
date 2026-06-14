@@ -342,9 +342,9 @@
       "squadra1": "Centro B",
       "squadra2": "Bizzarrino A",
       "fase": "Semifinale 1",
-      "punti1": 0,
-      "punti2": 0,
-      "giocata": false
+      "punti1": 16,
+      "punti2": 21,
+      "giocata": true
     },
     {
       "n": 18,
